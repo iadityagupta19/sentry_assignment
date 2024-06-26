@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentry JavaScript Example</title>
+</head>
+
+<body>
+    <h1>Sentry JavaScript Example</h1>
+
+    <button onclick="triggerError()">Trigger Error</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@sentry/browser@6.15.0"></script>
+    <script src="app.js"></script>
+
+    <script>
+        // Initialize Sentry with your DSN
+        Sentry.init({
+            dsn: 'https://791915e5b732cacee87c84d17f4b8694@o4507498118381568.ingest.us.sentry.io/4507498129195008',
+        });
+    </script>
+</body>
+
+</html>
